@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+/* Resetting and Adding other setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    padding: 20px 10px;
+    background: #000000;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.crimson{
+    color: crimson;
+}
+
+nav ul li{
+    margin: 10px;
+    float: left;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover{
+    color: #ccc;
+    font-weight: 700;
+}
+
+.active{
+    color: crimson;
+    font-weight: 700;
+}
+
+/* Typing-Effect Header */
+header{
+    display: flex;
+    color: #ccc;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header p{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.typed-text{
+    font-weight: normal;
+    color: crimson;
+}
+
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #cccccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing{
+    animation: none;
+}
+
+@keyframes blink {
+    0% {background-color: #ccc;}
+    49% {background-color: #ccc;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: #ccc;}
+}
+
+.intro{
+    background-color: #ccc;
+    display: flex;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+}
+
+.intro figure{
+    margin: 150px auto;
+    line-height: 60px;
+    text-align: center;
+}
+
+.intro figure p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro figure figcaption{
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro figure a{
+    text-decoration: none;
+    background-color: rgb(187, 27, 59);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 500ms;
+}
+
+.intro figure a:hover{
+    background-color: crimson;
+    padding: 10px 40px;
+}
+
+@media only screen and (max-width: 425px) {
+    nav{
+        flex-direction: column;
+    }
+    
+    nav ul{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header p{
+        font-size: 2rem;
+    }
+
+    .intro figure a:hover{
+        padding: 10px 20px;
+        background-color: rgb(187, 27, 59);
+    }
+}
