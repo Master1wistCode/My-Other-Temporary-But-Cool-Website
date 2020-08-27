@@ -145,9 +145,32 @@ header figure figcaption{
 
 /* Media Queries */
 @media only screen and (max-width: 425px) {
+    nav{
+        flex-direction: column;
+    }
     
+    nav ul{
+        margin: 0 auto;
+    }
+
+    header figure p{
+        font-size: 2rem;
+    }
+
+    .work1 .des figure p{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .work1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work1 .img img{
+        height: 15rem;
+    }
 }
