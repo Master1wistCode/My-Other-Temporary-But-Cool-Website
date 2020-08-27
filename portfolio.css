@@ -162,7 +162,6 @@ header figure figcaption{
         font-size: 1.2rem;
         font-weight: 700;
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -172,6 +171,6 @@ header figure figcaption{
     }
 
     .work1 .img img, .work2 .img img{
-        height: 15rem;
+        height: 10rem;
     }
 }
