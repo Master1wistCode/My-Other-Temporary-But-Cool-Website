@@ -84,6 +84,7 @@ header figure p{
     text-align: center;
     overflow: hidden;
     padding: 0.5rem;
+    color: crimson;
 }
 
 header figure figcaption{
@@ -111,7 +112,7 @@ header figure figcaption{
 }
 
 /* Portfolio Part */
-.work1{
+.work1, .work2{
     display: flex;
     height: 100vh;
     justify-content: space-evenly;
@@ -120,27 +121,27 @@ header figure figcaption{
     padding: 10px 20px;
 }
 
-.work1 .img img{
+.work1 .img img, .work2 .img img{
     height: 20rem;
     border-radius: 20px;
 }
 
-.work1 .des figure{
+.work1 .des figure, .work2 .des figure{
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
 }
 
-.work1 .des{
+.work1 .des, .work2 .des{
     padding: 10px 50px;
 }
 
-.work1 .des figure p{
+.work1 .des figure p, .work2 .des figure p{
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.work1 .des figure figcaption{
-    
+.work2{
+    flex-direction: row-reverse;
 }
 
 /* Media Queries */
@@ -157,7 +158,7 @@ header figure figcaption{
         font-size: 2rem;
     }
 
-    .work1 .des figure p{
+    .work1 .des figure p, .work2 .des figure p{
         font-size: 1.2rem;
         font-weight: 700;
     }
@@ -165,12 +166,12 @@ header figure figcaption{
 }
 
 @media only screen and (max-width: 768px) {
-    .work1{
+    .work1, .work2{
         flex-direction: column;
         text-align: center;
     }
 
-    .work1 .img img{
+    .work1 .img img, .work2 .img img{
         height: 15rem;
     }
 }
