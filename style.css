@@ -72,7 +72,7 @@ header{
     opacity: 0.2;
     filter: alpha( opacity = 20 );
     position: absolute;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 }
 

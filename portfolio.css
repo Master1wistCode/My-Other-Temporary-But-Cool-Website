@@ -11,6 +11,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background: #000000;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -72,11 +73,11 @@ header{
     opacity: 0.2;
     filter: alpha( opacity = 20 );
     position: absolute;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 }
 
-header p{
+header figure p{
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -85,9 +86,8 @@ header p{
     padding: 0.5rem;
 }
 
-.typed-text{
-    font-weight: normal;
-    color: crimson;
+header figure figcaption{
+    text-align: center;
 }
 
 .cursor{
@@ -110,63 +110,44 @@ header p{
     100% {background-color: #ccc;}
 }
 
-/* Introductory Part */
-.intro{
-    background-color: #ccc;
+/* Portfolio Part */
+.work1{
     display: flex;
     height: 100vh;
-    justify-items: center;
-    align-content: center;
-}
-
-.intro figure{
-    margin: 150px auto;
-    line-height: 60px;
-    text-align: center;
-}
-
-.intro figure p{
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.intro figure figcaption{
-    font-size: 20px;
-    text-align: center;
-}
-
-.intro figure a{
-    text-decoration: none;
-    background-color: rgb(187, 27, 59);
-    color: #fff;
+    justify-content: space-evenly;
+    color: #ccc;
+    align-items: center;
     padding: 10px 20px;
+}
+
+.work1 .img img{
+    height: 20rem;
     border-radius: 20px;
-    transition: 500ms;
 }
 
-.intro figure a:hover{
-    background-color: crimson;
-    padding: 10px 40px;
+.work1 .des figure{
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
 }
 
-@media only screen and (max-width: 425px) {
-    nav{
-        flex-direction: column;
-    }
+.work1 .des{
+    padding: 10px 50px;
+}
+
+.work1 .des figure p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.work1 .des figure figcaption{
     
-    nav ul{
-        margin: 0 auto;
-    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 425px) {
+    
 }
 
 @media only screen and (max-width: 768px) {
-    header p{
-        font-size: 2rem;
-    }
-
-    .intro figure a:hover{
-        padding: 10px 20px;
-        background-color: rgb(187, 27, 59);
-    }
+    
 }
